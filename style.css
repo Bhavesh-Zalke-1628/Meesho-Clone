@@ -24,6 +24,7 @@ html,body{
 nav{
     height: 17vh;
     width: 100%;
+    color: gray;
 }
 nav #nav-one{
     height: 50%;
@@ -357,8 +358,9 @@ nav #nav-one{
 #ProductHeading{
     display: flex;
     align-self: flex-start;
-    padding-left: 65px;
+    padding-left: 20px;
     /* font-size:3vw; */
+    margin-top: 20px;
 }
 #product{
     height: 100vh;
@@ -367,20 +369,18 @@ nav #nav-one{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    margin-top: 20px;
+    margin-left: 50px;
+    gap: 5px;
 }
 #product #pleft{
     height: 100%;
     width: 20%;
-    background-color: yellow;
+    /* background-color: yellow; */
     display: flex;
     align-items: center;
     flex-direction: column;
-}
-#product #pright{
-    width: 70%;
-    height: 100%;
-    background-color: green;
+    margin-bottom: 20px;
 }
 #sort{
     height: 4%;
@@ -391,12 +391,143 @@ nav #nav-one{
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
+    border-radius: 4px;
 }
 #sort p{
     font-size: 1.2vw;
     letter-spacing: 1px;
+    color: gray;
 }
 #downArrow{
     height: 20px;
     width: 20px;
+}
+#filter{
+    height: 90%;
+    width: 90%;
+    margin: 10px;
+    border: 1px solid gray;
+    border-radius: 4px;
+
+}
+#filter .filter{
+    height: 10%;
+    width: 90%;
+    border-bottom: 1px solid gray;
+    display: flex;
+    align-self: self-start;
+    padding: 2px;
+    margin: 10px;
+    flex-direction: column;
+}
+#filter>div p{
+    font-size: 13px;
+}
+
+#categeory{
+    display: flex;
+    align-self: self-start;
+    padding: 2px;
+    margin: 10px;
+    flex-direction: column;
+    border-bottom: 1px solid gray;
+}
+#categeory input{
+    height: 35px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    padding-left: 15px;
+    padding-bottom: 3px;
+    text-align: left;
+}
+#categeory .item{
+    display: flex;
+    gap: 10px;
+    margin-top: 12px;
+    color: gray;
+
+}
+#categeory .item p{
+    font-size: 17px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.show{
+    text-transform: uppercase;
+    font-weight: 400x;
+    margin: 10px 20px;
+    color: #9f2089;
+}
+#product #pright{
+    width: 70%;
+    height: 100%;
+    /* background-color: green; */
+    /* border: 1px solid gray; */
+}
+#cards{
+    width: 100%;
+    height: 50%;
+    margin-top: 10px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+#card{
+    height: 100%;
+    width: 24%;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    padding: 10px 7px;
+    gap: 10px;
+    box-shadow: 1px 1px 5px gray;
+    border: none;
+}
+#card:hover{
+    box-shadow: 1px 1px 10px royalblue;
+}
+#card img{
+    /* height: 50%; */
+    width: 94%;/
+    object-fit: cover;
+    object-position: center;
+    border-radius: 7px 7px 0px 0px;
+    margin-left: 7px;
+}
+#card p{
+    font-size: 20px;
+    text-transform: capitalize;
+    color: gray;
+}
+#card .delivery{
+    font-size: 15px;
+    background-color: #d7d4d1;
+    height: 20px;
+    width: 110px;
+    text-align: center;
+    border-radius: 10px;
+}
+#card .button{
+    display: flex;
+    align-items: center;   
+    gap: 10px;
+}
+#card .button img{
+    height: 15px;
+    width: 15px;
+}
+#card button{
+    height: 30px;
+    width: 65px;
+    font-size: 17px;
+    background-color: #038d63;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+}
+#card .Reviews{
+    font-size: 12px;
+    margin-top: 10px;
 }
