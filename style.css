@@ -3,8 +3,8 @@
     src: url(./Mier_B02-Bold.ttf);
 }
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
     font-family: main;
 }
@@ -25,6 +25,9 @@ nav{
     height: 17vh;
     width: 100%;
     color: gray;
+    position: sticky;
+    top: 0px;
+    background-color: #fff;
 }
 nav #nav-one{
     height: 50%;
@@ -39,12 +42,28 @@ nav #nav-one{
     display: flex;
     gap: 25px;
 }
-#nav-one #search input{
-    height: 2.8vw;
-    width: 25vw;
+#nav-one #search{
+    height: 6vh;
+    width: 26vw;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    border: 1px solid gray;
+    padding-left:7px;
     border-radius: 5px;
-    margin-top: 12px;
+    /* padding: 1px 10px; */
+}
+#nav-one #search input{ 
+    width: 23vw;
+    border-radius: 5px;
+    border: none;
     font-size: 17px;
+    border: none;
+    display: flex;
+    margin-left:5px;
+    align-items: center;
+    outline-color: #fff;
+    color:rgb(99, 36, 128);
 }
 .two{
     width: 50%;
@@ -357,15 +376,13 @@ nav #nav-one{
 }
 #ProductHeading{
     display: flex;
-    align-self: flex-start;
-    padding-left: 20px;
-    /* font-size:3vw; */
+    align-self: start;
+    margin-left: 7.5%;
     margin-top: 20px;
 }
 #product{
     height: 100vh;
     width: 100%;
-    /* background-color: black; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -376,11 +393,9 @@ nav #nav-one{
 #product #pleft{
     height: 100%;
     width: 20%;
-    /* background-color: yellow; */
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 20px;
 }
 #sort{
     height: 4%;
@@ -462,14 +477,13 @@ nav #nav-one{
 #product #pright{
     width: 70%;
     height: 100%;
-    /* background-color: green; */
-    /* border: 1px solid gray; */
+    display: flex;
+    flex-direction: column;
 }
 #cards{
     width: 100%;
     height: 50%;
     margin-top: 10px;
-    /* background-color: red; */
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -477,20 +491,20 @@ nav #nav-one{
 #card{
     height: 100%;
     width: 24%;
-    /* background-color: green; */
     display: flex;
     flex-direction: column;
     padding: 10px 7px;
     gap: 10px;
     box-shadow: 1px 1px 5px gray;
     border: none;
+    cursor: pointer;
 }
 #card:hover{
     box-shadow: 1px 1px 10px royalblue;
 }
 #card img{
-    /* height: 50%; */
-    width: 94%;/
+    height: 50%;
+    width: 94%;
     object-fit: cover;
     object-position: center;
     border-radius: 7px 7px 0px 0px;
@@ -530,4 +544,48 @@ nav #nav-one{
 #card .Reviews{
     font-size: 12px;
     margin-top: 10px;
+}
+#card.price{
+    color: #000;
+}
+#gender{
+    height: 25%;
+    width: 90%;
+    /* border: 1px solid gray; */
+}
+#gender button{
+    height: 35px;
+    width:50px;
+    font-size: 12px;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+#leftContainer{
+    height: 100%;
+    width: 90%;
+    /* border: 2px solid green; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: start;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 0px;
+}
+#leftContainer>div{
+    /* height: %; */
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    /* border: 2px solid yellow; */
+}
+#leftContainer>div img{
+    height: 25px;
+}
+#leftContainer>div p{
+    font-size: 24px;
+    font-stretch: 2vh;
 }
