@@ -279,16 +279,14 @@ nav #nav-one{
 }
 #women{
     height: 80vh;
-    width: 80%;
-    /* background-color: gray; */
+    width: 72%;
     margin-top: 25px;
-    margin-left: 90px;
     background: url(./Assest/Women.webp);
     background-repeat: no-repeat;
 }
 #women p{
     text-align: end;
-    font-size: 40px;
+    font-size: 35px;
     color: lightskyblue;
     font-weight: 400;
     font-stretch: ultra-condensed;
@@ -313,4 +311,47 @@ nav #nav-one{
     height: 40px;
     width: 180px;
     border-radius: 5px;
+}
+#supplier{
+    height: fit-content;
+    width: 72.5%;
+    background-color: gray;
+    background: url(./Assest/Supplier.webp);
+    background-repeat: no-repeat;
+    padding:20px 70px;
+    line-height: 50px;
+}
+#supplier h1{
+    color: #fff;
+    font-size: 40px;
+    letter-spacing: -1px;
+}
+#supplier p{
+    color: #fff;
+    font-size: 20px;
+    /* letter-spacing: -1px; */
+}
+#supplyContainer{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#supplyContainer .item{
+    height: 20px;
+    width: 17vw;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-right: 2px solid gray;
+    /* border: 2px solid red; */
+}
+#supplier button{
+    height: 70px;
+    width: 150px;
+    margin-top: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+    color: #9f2089;
+    cursor: pointer;
 }
