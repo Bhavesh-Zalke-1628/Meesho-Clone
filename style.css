@@ -222,7 +222,7 @@ nav #nav-one{
     height: 80vh;
     width: 74%;
     margin-top: 25px;
-    background: linear-gradient(#ffe8cd,#d9a6d0);
+    background: linear-gradient(hwb(32 80% 0%),#d9a6d0);
     display: flex;
     align-items: center;
     justify-content: center;
