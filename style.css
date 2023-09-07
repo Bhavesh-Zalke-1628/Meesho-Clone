@@ -396,6 +396,7 @@ nav #nav-one{
     display: flex;
     align-items: center;
     flex-direction: column;
+    text-transform: capitalize;
 }
 #sort{
     height: 4%;
@@ -487,6 +488,7 @@ nav #nav-one{
     display: flex;
     justify-content: center;
     gap: 10px;
+    text-transform: capitalize;
 }
 #card{
     height: 100%;
@@ -588,4 +590,30 @@ nav #nav-one{
 #leftContainer>div p{
     font-size: 24px;
     font-stretch: 2vh;
+}
+footer{
+    height: 40vh;
+    width: 100%;
+    background-color: #e0e8f0;
+    margin-top: 51%;
+    padding: 0px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer #one{
+    display: flex;
+    flex-direction: column;
+}
+footer #img img{
+    height: 40px;
+    /* width: 0px; */
+    border-radius: 10px;
+}
+footer #one h1{
+    font-size: 40px;    
+    font-weight: 100;
+}
+footer #two{
+    display: flex;
 }
